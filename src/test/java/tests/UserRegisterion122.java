@@ -20,7 +20,7 @@ public class UserRegisterion122 extends TestBase1{
 		homeobject = new HomePage1(driver);
 		homeobject.openRegistrationPage();
 		registerobject = new UserRegistrationPage1(driver);
-		registerobject.userRegistration("mostafa", "hasan", "test65email@gmail.com", "12345678");
+		registerobject.userRegistration("mostafa", "hasan", "test5email@gmail.com", "12345678");
 		Assert.assertTrue(registerobject.sucessmessage.getText().contains("Your registration completed"));
 		}
 	@Test (dependsOnMethods = {"UserCanRegisterSuccssfully"})
